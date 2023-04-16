@@ -38,10 +38,68 @@ Data measured by the device and information about the currently set configuratio
 - https://lora.vsb.cz/index.php/grafana-panel-plugin-for-sending-downlinks/
 - https://lora.vsb.cz/index.php/sending-downlinks-via-tts-using-a-python-script/
 
-## Encoding table of data sent in uplinks
+## Encoding tables of data sent in uplinks
 
+Tab.1.: Encoding of sent (measured, computed) data in uplinks using Cayenne LPP
+| Entry             | Channel (Cayenne LPP) | Type (Cayenne LPP) |
+|-------------------|-----------------------|--------------------|
+| relaySwitchState  | 1                     | addSwitch          |
+| relayStateChanges | 2                     | addSwitch          |
+| lightIntensity    | 3                     | addLuminosity      |
+| batteryVoltage    | 4                     | addVoltage         |
+| batteryCapacity   | 5                     | addPercentage      |
+| batteryTemp       | 6                     | addTemperature     |
+| rtcTemp           | 7                     | addTemperature     |
+| voltage           | 8                     | addVoltage         |
+| frequency         | 9                     | addFrequency       |
+| energy            | 10                    | addEnergy          |
+| current           | 11                    | addCurrent         |
+| power             | 12                    | addPower           |
+| pf                | 13                    | addAnalogOutput    |
+| Sunset            | 111                   | addSmallTime       |
+| Sunrise           | 112                   | addSmallTime       |
 
+Tab.2.: Table of data stored in bit arrays
+| Array      | Bit position in array | Meaning of the variable          | Variable for resulting value |
+|------------|-----------------------|----------------------------------|------------------------------|
+| errors[]   | 7                     | Send data every error            | errorsInOne                  |
+|            | 6                     | Number of measured samples error |                              |
+|            | 5                     | Working mode error               |                              |
+|            | 4                     | Switching times error            |                              |
+|            | 3                     | Timezone error                   |                              |
+|            | 2                     | Power Grid error                 |                              |
+|            | 1                     | Location error                   |                              |
+|            | 0                     | Password error                   |                              |
+| statuses[] | 7                     | -                                | statusesInOne                |
+|            | 6                     | -                                |                              |
+|            | 5                     | -                                |                              |
+|            | 4                     | -                                |                              |
+|            | 3                     | statusAT24C256                   |                              |
+|            | 2                     | statusDS3231                     |                              |
+|            | 1                     | statusLC709203F                  |                              |
+|            | 0                     | statusBH1750                     |                              |
 
+Tab.3.: Encoding of sent (first configuration and configuration) data in uplinks using Cayenne LPP
+| Entry                  | Channel (Cayenne LPP) | Type (Cayenne LPP) |
+|------------------------|-----------------------|--------------------|
+| statusesInOne          | 51                    | addDigitalInput    |
+| errorsInOne            | 150                   | addDigitalInput    |
+| workingMode            | 101                   | addDigitalInput    |
+| myTimeZone             | 102                   | addDigitalInput    |
+| myPowerGrid            | 103                   | addDigitalInput    |
+| sendDataEvery          | 100                   | addSmallTime       |
+| measureSamples         | 100                   | addPresence        |
+| lightIThreshold        | 101                   | addLuminosity      |
+| lightISafeZone         | 102                   | addLuminosity      |
+| latitude, longitude    | 101                   | addGPS             |
+| On time1               | 101                   | addSmallTime       |
+| On time2               | 103                   | addSmallTime       |
+| On time3               | 105                   | addSmallTime       |
+| Off time1              | 102                   | addSmallTime       |
+| Off time2              | 104                   | addSmallTime       |
+| Off time3              | 106                   | addSmallTime       |
+| Send only selected 1/2 | 1                     | addDigitalOutput   |
+| Send only selected 2/2 | 2                     | addDigitalOutput   |
 
 ## Decoding tables of data received in downlinks
 Tab.1.: Decoding table of data received in downlinks
