@@ -5,6 +5,7 @@
 ## Content
 - [Requirements and how to build and run the device](https://github.com/OndrejKnebl/Multifunctional_switching_device#requirements-and-how-to-build-and-run-the-device)
 - [Short description](https://github.com/OndrejKnebl/Multifunctional_switching_device#short-description)
+- [Splitting of the data traffic using FPort]()
 - [Solutions that can be used to set up the device using downlinks](https://github.com/OndrejKnebl/Multifunctional_switching_device#solutions-offered-below-can-be-used-to-set-up-the-device-using-downlinks)
 - [Encoding table of data sent in uplinks](https://github.com/OndrejKnebl/Multifunctional_switching_device#encoding-tables-of-data-sent-in-uplinks)
 - [Decoding tables of data received in downlinks](https://github.com/OndrejKnebl/Multifunctional_switching_device#decoding-tables-of-data-received-in-downlinks)
@@ -26,6 +27,9 @@ The device works in the LoRaWAN IoT network The Things Stack. Most device settin
 
 Data measured by the device and information about the currently set configuration of the device are sent to TTS in uplinks encoded in the Cayenne LPP format (however, definitions of custom data types were added).
 
+## Splitting of the data traffic using FPort
+- Device configuration is performed on FPort number 2 (this applies to both uplinks and downlinks)
+- Measured or calculated data are sent by uplinks on FPort number 1
 
 ## Solutions offered below can be used to set up the device using downlinks:
 
