@@ -2,7 +2,7 @@
 
 ## Requirements and how to build and run the device
 
-- All this information is available on the website:
+- All this information is available on the website: https://lora.vsb.cz/index.php/multifunctional-switching-device/
 
 
 ## Short description
@@ -19,12 +19,12 @@ Data measured by the device and information about the currently set configuratio
 ### Solutions offered below can be used to set up the device:
 
 #### Solutions directly for this device:
--
--
+- 
+- 
 
 #### Universal solutions:
-- https://github.com/OndrejKnebl/TTS_Downlink_Sender_plugin
-- 
+- https://lora.vsb.cz/index.php/grafana-panel-plugin-for-sending-downlinks/
+- https://lora.vsb.cz/index.php/sending-downlinks-via-tts-using-a-python-script/
 
 ## Encoding table of data sent in uplinks
 
@@ -103,3 +103,41 @@ Tab.2.: Send only selected - Decoding table of data stored in bit fields receive
 - Sign: no (positive values only)
 - Minimum value: 0
 - Maximum value: 16777215
+
+
+## Data storage table in EEPROM memory
+Tab.3.: Data storage table in EEPROM memory at selected addresses
+| Address 1 (hexadecimal) | Address 2 (hexadecimal) | Address 1 (decimal) | Address 2 (decimal) | Data                                        | Data types |
+|-------------------------|-------------------------|---------------------|---------------------|---------------------------------------------|------------|
+| 0x00                    | 0x800                   | 0                   | 2048                | load                                        | char []    |
+| 0x10                    | 0x810                   | 16                  | 2064                | Working mode                                | int        |
+| 0x20                    | 0x820                   | 32                  | 2080                | Send data every                             | uint32_t   |
+| 0x30                    | 0x830                   | 48                  | 2096                | Number of measured samples                  | uint32_t   |
+| 0x40                    | 0x840                   | 64                  | 2112                | Light Intensity Threshold                   | float      |
+| 0x50                    | 0x850                   | 80                  | 2128                | Light Intensity Safe zone                   | float      |
+| 0x60                    | 0x860                   | 96                  | 2144                | Timezone                                    | int        |
+| 0x70                    | 0x870                   | 112                 | 2160                | Latitude                                    | float      |
+| 0x80                    | 0x880                   | 128                 | 2176                | Longitude                                   | float      |
+| 0x90                    | 0x890                   | 144                 | 2192                | Power Grid                                  | int        |
+| 0x100                   | 0x900                   | 256                 | 2304                | Send Only Selected -   relaySwitchState     | bool       |
+| 0x102                   | 0x902                   | 258                 | 2306                | Send Only Selected -   relaySwitchWaSClosed | bool       |
+| 0x104                   | 0x904                   | 260                 | 2308                | Send Only Selected - lightIntensity         | bool       |
+| 0x106                   | 0x906                   | 262                 | 2310                | Send Only Selected - batteryVoltage         | bool       |
+| 0x108                   | 0x908                   | 264                 | 2312                | Send Only Selected - batteryCapacity        | bool       |
+| 0x10A                   | 0x90A                   | 266                 | 2314                | Send Only Selected - batteryTemp            | bool       |
+| 0x10C                   | 0x90C                   | 268                 | 2316                | Send Only Selected - rtcTemp                | bool       |
+| 0x10E                   | 0x90E                   | 270                 | 2318                | Send Only Selected - voltage                | bool       |
+| 0x110                   | 0x910                   | 272                 | 2320                | Send Only Selected - frequency              | bool       |
+| 0x112                   | 0x912                   | 274                 | 2322                | Send Only Selected - energy                 | bool       |
+| 0x114                   | 0x914                   | 276                 | 2324                | Send Only Selected - current                | bool       |
+| 0x116                   | 0x916                   | 278                 | 2326                | Send Only Selected - power                  | bool       |
+| 0x118                   | 0x918                   | 280                 | 2328                | Send Only Selected - pf                     | bool       |
+| 0x11A                   | 0x91A                   | 282                 | 2330                | Send Only Selected - Sunrise                | bool       |
+| 0x11C                   | 0x91C                   | 284                 | 2332                | Send Only Selected - Sunset                 | bool       |
+| 0x11E                   | 0x91E                   | 286                 | 2334                | Send Only Selected - reserved               | bool       |
+| 0x130                   | 0x930                   | 304                 | 2352                | onOffTimes - small_time_101                 | uint32_t   |
+| 0x138                   | 0x938                   | 312                 | 2360                | onOffTimes - small_time_102                 | uint32_t   |
+| 0x140                   | 0x940                   | 320                 | 2368                | onOffTimes - small_time_103                 | uint32_t   |
+| 0x148                   | 0x948                   | 328                 | 2376                | onOffTimes - small_time_104                 | uint32_t   |
+| 0x150                   | 0x950                   | 336                 | 2384                | onOffTimes - small_time_105                 | uint32_t   |
+| 0x158                   | 0x958                   | 344                 | 2392                | onOffTimes - small_time_106                 | uint32_t   |
