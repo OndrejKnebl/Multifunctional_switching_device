@@ -1,5 +1,7 @@
 # Multifunctional Switching Device - Multifunkční spínací zařízení
 
+![My Remote Image](http://lora.vsb.cz/wp-content/uploads/2023/03/Switch_complete-scaled.jpg)
+
 ## Requirements and how to build and run the device
 
 - All this information is available on the website: https://lora.vsb.cz/index.php/multifunctional-switching-device/
