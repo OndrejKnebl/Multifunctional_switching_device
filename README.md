@@ -144,7 +144,7 @@ Tab.4.: Decoding table of data received in downlinks
 | Latitude, Longitude, Altitude | -                           | gps_101                                | -90 - 90, -180 - 180, 0 |
 
 
-Tab.5.: Send only selected - Decoding table of data stored in bit fields received in downlinks 
+Tab.5.: Send only selected - Decoding table of data stored in bit arrays received in downlinks 
 | Entry                | Bit position in array | Decoded type and channel (Cayenne LPP) | Expected value |
 |----------------------|-----------------------|----------------------------------------|----------------|
 | Relay state          | 7                     | digital_out_1                          | 0-255          |
