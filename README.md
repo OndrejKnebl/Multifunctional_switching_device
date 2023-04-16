@@ -40,7 +40,6 @@ Data measured by the device and information about the currently set configuratio
 
 #### Universal solutions:
 - https://lora.vsb.cz/index.php/grafana-panel-plugin-for-sending-downlinks/
-- https://lora.vsb.cz/index.php/sending-downlinks-via-tts-using-a-python-script/
 
 ## Encoding tables of data sent in uplinks
 
