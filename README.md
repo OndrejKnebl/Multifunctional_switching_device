@@ -102,7 +102,7 @@ Tab.3.: Encoding of sent (first configuration and configuration) data in uplinks
 | Send only selected 2/2 | 2                     | addDigitalOutput   |
 
 ## Decoding tables of data received in downlinks
-Tab.1.: Decoding table of data received in downlinks
+Tab.4.: Decoding table of data received in downlinks
 | Entry                         | Entry options               | Decoded type and channel (Cayenne LPP) | Expected value          |
 |-------------------------------|-----------------------------|----------------------------------------|-------------------------|
 | Settings password             | -                           | power_100                              | 0-9999                  |
@@ -144,7 +144,7 @@ Tab.1.: Decoding table of data received in downlinks
 | Latitude, Longitude, Altitude | -                           | gps_101                                | -90 - 90, -180 - 180, 0 |
 
 
-Tab.2.: Send only selected - Decoding table of data stored in bit fields received in downlinks 
+Tab.5.: Send only selected - Decoding table of data stored in bit fields received in downlinks 
 | Entry                | Bit position in array | Decoded type and channel (Cayenne LPP) | Expected value |
 |----------------------|-----------------------|----------------------------------------|----------------|
 | Relay state          | 7                     | digital_out_1                          | 0-255          |
@@ -176,7 +176,7 @@ Tab.2.: Send only selected - Decoding table of data stored in bit fields receive
 
 
 ## Data storage table in EEPROM memory
-Tab.3.: Data storage table in EEPROM memory at selected addresses
+Tab.6.: Data storage table in EEPROM memory at selected addresses
 | Address 1 (hexadecimal) | Address 2 (hexadecimal) | Address 1 (decimal) | Address 2 (decimal) | Data                                        | Data types |
 |-------------------------|-------------------------|---------------------|---------------------|---------------------------------------------|------------|
 | 0x00                    | 0x800                   | 0                   | 2048                | load                                        | char []    |
