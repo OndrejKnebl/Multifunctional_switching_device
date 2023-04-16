@@ -19,7 +19,7 @@ Data measured by the device and information about the currently set configuratio
 ### Solutions offered below can be used to set up the device:
 
 #### Solutions directly for this device:
-- 
+- https://github.com/OndrejKnebl/Mutiswitch_Grafana_panel_plugin
 - 
 
 #### Universal solutions:
