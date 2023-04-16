@@ -2,6 +2,15 @@
 
 ![My Remote Image](http://lora.vsb.cz/wp-content/uploads/2023/03/Switch_complete-scaled.jpg)
 
+## Content
+- [Requirements and how to build and run the device](https://github.com/OndrejKnebl/Multifunctional_switching_device#requirements-and-how-to-build-and-run-the-device)
+- [Short description](https://github.com/OndrejKnebl/Multifunctional_switching_device#short-description)
+- [Solutions that can be used to set up the device using downlinks](https://github.com/OndrejKnebl/Multifunctional_switching_device#solutions-offered-below-can-be-used-to-set-up-the-device-using-downlinks)
+- [Encoding table of data sent in uplinks](https://github.com/OndrejKnebl/Multifunctional_switching_device#encoding-table-of-data-sent-in-uplinks)
+- [Decoding tables of data received in downlinks](https://github.com/OndrejKnebl/Multifunctional_switching_device#decoding-tables-of-data-received-in-downlinks)
+- [Small time - custom added type](https://github.com/OndrejKnebl/Multifunctional_switching_device#small-time---custom-added-type)
+- [Data storage table in EEPROM memory](https://github.com/OndrejKnebl/Multifunctional_switching_device#data-storage-table-in-eeprom-memory)
+
 ## Requirements and how to build and run the device
 
 - All this information is available on the website: https://lora.vsb.cz/index.php/multifunctional-switching-device/
