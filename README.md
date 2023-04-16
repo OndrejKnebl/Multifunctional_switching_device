@@ -22,7 +22,7 @@ A program for a device that can switch, for example, lights in a small parking l
 
 The device also functions as a measuring device that measures light intensity (with a BH1750 sensor), voltage and frequency of the power line (with a PZEM-004T-100A measuring device). When the device is switched on, it measures the electrical energy consumption, current, active power and power factor of the switched device (also with the PZEM-004T-100A measuring device). Furthermore, the voltage, state and temperature of the battery that powers the device during a power failure (by the LC709203F module) and the temperature of the RTC are measured.
 
-The device works in the LoRaWAN IoT network The Things Stack. Most device settings can be done from TTS using downlinks, in which configuration data encoded in Cayenne LPP format is sent.
+The device works in the LoRaWAN IoT network The Things Stack. Most device settings can be done from TTS using downlinks, in which configuration data encoded in Cayenne LPP format (with custom data types) is sent.
 
 Data measured by the device and information about the currently set configuration of the device are sent to TTS in uplinks encoded in the Cayenne LPP format (however, definitions of custom data types were added).
 
