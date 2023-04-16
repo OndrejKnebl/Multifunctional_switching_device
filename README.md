@@ -16,7 +16,7 @@ The device works in the LoRaWAN IoT network The Things Stack. Most device settin
 Data measured by the device and information about the currently set configuration of the device are sent to TTS in uplinks encoded in the Cayenne LPP format (however, definitions of custom data types were added).
 
 
-### Solutions offered below can be used to set up the device using downlinks:
+## Solutions offered below can be used to set up the device using downlinks:
 
 #### Solutions directly for this device:
 - https://github.com/OndrejKnebl/Mutiswitch_Grafana_panel_plugin
