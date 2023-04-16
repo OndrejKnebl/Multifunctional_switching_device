@@ -38,7 +38,7 @@ Data measured by the device and information about the currently set configuratio
 - https://github.com/OndrejKnebl/Multiswitch_Python_program
 - https://github.com/OndrejKnebl/Multiswitch_Python_script
 
-#### Universal solutions:
+#### Universal solution:
 - https://lora.vsb.cz/index.php/grafana-panel-plugin-for-sending-downlinks/
 
 ## Encoding tables of data sent in uplinks
