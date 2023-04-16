@@ -34,9 +34,9 @@ Data measured by the device and information about the currently set configuratio
 ## Solutions offered below can be used to set up the device using downlinks:
 
 #### Solutions directly for this device:
-- https://github.com/OndrejKnebl/Mutiswitch_Grafana_panel_plugin
-- https://github.com/OndrejKnebl/Mutiswitch_Python_program
-- https://github.com/OndrejKnebl/Mutiswitch_Python_script
+- https://github.com/OndrejKnebl/Multiswitch_Grafana_panel_plugin
+- https://github.com/OndrejKnebl/Multiswitch_Python_program
+- https://github.com/OndrejKnebl/Multiswitch_Python_script
 
 #### Universal solutions:
 - https://lora.vsb.cz/index.php/grafana-panel-plugin-for-sending-downlinks/
